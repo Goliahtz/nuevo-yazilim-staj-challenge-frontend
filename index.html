@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>nuevo</title>
+	 <link rel="stylesheet" type="text/css" href="style/style.css" />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script   src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>	  
+<script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="script/script.js"> </script>
+<!--  --------------------------------ÖNEMLİ ÖNEMLİ ÖNEMLİ ÖNEMLİ ------------------------------------------------------------------------------
+
+Mail , javascript dosyalarının gönderilmesine izin vermediği için html içerisinde javascipt dosyalarını oluşturdum.
+Dosya hiyerarşi sini istediğim şekilde yapamadım . 
+Göz önüne alırken dikkat ederseniz sevinirim.
+Jquery ( JS) dosyasını gönderemedim kod içerisinde bu yüzden jquery cdn kod blogunuda html sayfasına yükleyiğ gönderdim. 
+
+Şerifhan Işıklı
+serifhaniskl@gmail.com
+https://www.linkedin.com/in/serifhan-isikli1/
+0537-040-37-97
+
+Jquery CDN : > <script   src="http://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+  
+
+
+
+ ------------------------------------ ÖNEMLİ ÖNEMLİ ÖNEMLİ ÖNEMLİ---------------------------------------------------------------------------  -->
+
+
+
+
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+
+$(".title").click(function(){
+
+$(".menu ul").slideToggle();
+
+var deger = $(".title span img").attr("src");
+
+$(".title span img").attr("src","minus.png");
+
+if(deger == "plus.png"){
+  $(".title span img").attr("src","minus.png");
+}else{
+
+ $(".title span img").attr("src","plus.png");
+}
+
+}); 
+
+});
+
+$(function() {
+
+ $(".slider ul li").hide();
+ $(".slider ul li:first").show(); 
+
+ var toplamLi = $(".slider ul li").length();
+ var liWidth= 700;
+ var toplamWidth=liWidth*toplamLi;
+ var liDeger = 0 ;
+ alert("asdasda");
+$(".slider ul").css("width", toplamWidth + "px");
+
+$("a.after").click(function(){
+  if(liDeger < toplamLi - 1) {
+    liDeger++;
+    yeniWidth = liWidth * liDeger;
+    $(".slider ul").animate({marginLeft: "-" + yeniWidth + "px"},500);
+  }
+});
+}); 
+
+/*var responsiveSlider = function() {
+
+  var slider = document.getElementById("slider");
+  var sliderWidth = slider.offsetWidth;
+  var slideList = document.getElementById("slideWrap");
+  var count = 1;
+  var items = slideList.querySelectorAll("li").length;
+  var prev = document.getElementById("prev");
+  var next = document.getElementById("next");
+
+  window.addEventListener('resize', function() {
+    sliderWidth = slider.offsetWidth;
+  });
+
+  var prevSlide = function() {
+    if(count > 1) {
+      count = count - 2;
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+    else if(count = 1) {
+      count = items - 1;
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+  };
+
+  var nextSlide = function() {
+    if(count < items) {
+      slideList.style.left = "-" + count * sliderWidth + "px";
+      count++;
+    }
+    else if(count = items) {
+      slideList.style.left = "0px";
+      count = 1;
+    }
+  };
+  
+  next.addEventListener("click", function() {
+    nextSlide();
+  });
+
+  prev.addEventListener("click", function() {
+    prevSlide();
+  });
+  
+  setInterval(function() {
+    nextSlide()
+  }, 8000);
+
+
+};
+
+window.onload = function() {
+  responsiveSlider();  
+} */
+
+
+</script>
+
+</head>
+<body bgcolor="#dce2e2">
+	<div class="ground">
+		<div class="website"> 
+		<div class="sidebar"> 
+			<div id="logo" ><p class="logo1" style="padding-top: 25px;"> <span class="logo2">L</span>OGO <span class="logo2">P</span>LACE</p></div>
+	
+   <div class="menu"> 
+   	<div class="title"> Categories <span> <img src="plus.png" width="13px" height="13px"></span> </div>
+          <ul>
+          	<li class="list"><a href="#">HOME</a></li>
+          <hr>
+          	<li class="list"><a href="#">ABOUT US</a></li>
+          	<hr>
+          	<li class="list"><a href="#">OUR WORKS</a></li>
+          	<hr align="center">
+          	<li class="list"><a href="#">SERVICES</a></li>
+          	<hr>
+          	<li class="list"><a href="#">JOURNAL</a></li>
+          	<hr>
+          	<li class="list lastli"><a href="#">CONTACT US</a></li>
+          	</ul>
+        	</div>
+        	
+
+
+  <div class="popular">
+   <p class="popular1"> POPULAR POST </p>
+
+   <div class="post1"><img src="wallpaper5.jpg" class="post1i" width="60px" height="60px"><p class="post1p">Magma Ullamcorper<br>Dolor Fermentum</p></div>
+   <div class="post2"><img src="wallpaper3.jpg" class="post2i" width="60px" height="60px"> <p class="post2p">Commodo Fursce<br>Dolor Adipiscing</p></div>
+   <div class="post3"><img src="wallpaper2.jpg" class="post3i" width="60px" height="60px"> <p class="post3p">Quam Inceptos<br>Lorem Tortor Risus</p></div>
+
+  </div>
+
+
+ <div class="buton1">
+    <a href="https://www.linkedin.com/in/serifhan-isikli1/">Şerifhan Işıklı<br>Click for LinkedIn<br>serifhaniskl@gmail.com</a>
+</div>
+
+ 
+</div>
+
+<div class="content"> 
+ <div class="head"><p class="headp"> HI , MY NAME IS EXAMPLE, WELCOME TO MY WEBSITE  <a href="#"  class="social fa fa-facebook"></a>
+ 	<a href="https://www.linkedin.com/in/serifhan-isikli1" class="social fa fa-twitter"></a>
+ 	<a href="https://www.linkedin.com/in/serifhan-isikli1" class="social fa fa-linkedin"></a>
+  <a href="https://www.linkedin.com/in/serifhan-isikli1" class="social fa fa-flickr"></a>
+  <a href="https://www.linkedin.com/in/serifhan-isikli1" class="social fa fa-youtube"></a>
+ 	<a href="https://www.linkedin.com/in/serifhan-isikli1" class="social fa fa-google-plus-square"></a></p>
+</div>
+
+
+<div id="slider-wrapper">
+  <div class="slider">
+        <a class="img-bir">
+            <img src="wallpaper1.jpg" width="728px">
+           
+         </a>
+
+        <a class="img-iki" >
+                <img src="wallpaper2.jpg" width="728px">
+           
+        </a>
+        <a class="img-uc">
+            <img src="wallpaper3.jpg" width="728px">
+            
+        </a>
+        <a class="img-dort">
+            <img src="wallpaper4.jpg" width="728px">
+            
+        </a>
+        <a class="img-bes">
+            <img src="wallpaper5.jpg" width="728px">
+            
+        </a>
+
+        
+     </div>
+</div>
+
+ <div class="recentworks"><p class="recentp">RECENT WORKS</p> <div class="recentbutton" style="width: 15px; height: 15px;">&gt</div>
+ <div class="recentbutton" style="width: 15px; height: 15px; ">&lt</div>
+	<div class="firstWork1"> <img src="wallpaper1.jpg" width="320px" height="300"> <p class="firstWorkp1 ">VESTIBULUM EUISMOD COMMODO AENEAN</p><br><p class="firstWorkp1 firstWp">Nullam id dolor id nibh ultricies vehicula ut id elit. Duis <br> mollis, est non commodo luctus, nisi erat porttitor ligula</p></div>
+  <div class="firstWork2"> <img src="wallpaper2.png" width="160px" height="150px"> <p class="firstWorkp1 ">BIBENDUM FRINGILLA</p><br><p class="firstWorkp2">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.Donec sed odio dui. Vestibulum id ligula</p></div>
+  <div class="firstWork3"> <img src="wallpaper1.jpg" width="160px" height="150px"><p class="firstWorkp1 ">SEM FUSCE ULTRICIES</p> <br> <p class="firstWorkp3">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh, ut fermentum massa justo sit amet risus</p></div>
+
+</div>
+
+<div class="footer"> <p class="footerp" > &copy; 2011 Example. All Rights Reserved.</p><div  class="footerbutton"><a href="#">&gt</a></div>
+ </div>
+</div>
+</div>
+
+
+</div>
+
+
+
+</body>
+</html>

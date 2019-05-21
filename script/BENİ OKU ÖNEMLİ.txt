@@ -1,0 +1,13 @@
+
+Mail gönderme iþlemi, javascript dosyalarýnýn gönderilmesine izin vermediði için html içerisinde javascipt dosyalarýný oluþturdum.
+Dosya hiyerarþi sini istediðim þekilde yapamadým . 
+Göz önüne alýrken dikkat ederseniz sevinirim.
+Jquery ( JS) dosyasýný gönderemedim kod içerisinde bu yüzden jquery cdn kod blogunuda html sayfasýna yükleyið gönderdim. 
+
+Þerifhan Iþýklý
+serifhaniskl@gmail.com
+https://www.linkedin.com/in/serifhan-isikli1/
+0537-040-37-97
+
+Jquery CDN : > <script   src="http://code.jquery.com/jquery-3.3.1.js"   
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
